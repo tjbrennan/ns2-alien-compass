@@ -1,0 +1,4 @@
+modEntry = [[
+	Client: lua/Compass_Client.lua,
+	Priority: 5
+]]
