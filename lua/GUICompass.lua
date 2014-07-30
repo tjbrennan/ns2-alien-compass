@@ -22,7 +22,7 @@ function GUICompass:Uninitialize()
 end
 
 function GUICompass:Update(deltaTime)
-	GUIAnimatedScript.Update(self, deltaTime)
+    GUIAnimatedScript.Update(self, deltaTime)
 
     local playerRotation = PlayerUI_GetMinimapPlayerDirection()
     local compassRotation = math.abs(math.pi - playerRotation)
