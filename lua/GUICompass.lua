@@ -5,7 +5,6 @@ local kLargePlayerArrowFileName = PrecacheAsset("ui/minimap_largeplayerarrow.dds
 
 function GUICompass:Initialize()
     GUIAnimatedScript.Initialize(self)
-    // TODO: add cardinal text?
     
     self.compass = GUIManager:CreateGraphicItem()
     self.compass:SetSize(Vector(64, 64, 0)) //kPlayerIconSize
@@ -22,7 +21,7 @@ function GUICompass:Uninitialize()
 end
 
 function GUICompass:Update(deltaTime)
-	GUIAnimatedScript.Update(self, deltaTime)
+    GUIAnimatedScript.Update(self, deltaTime)
 
     local playerRotation = PlayerUI_GetMinimapPlayerDirection()
     local compassRotation = math.abs(math.pi - playerRotation)
